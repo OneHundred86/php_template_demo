@@ -41,14 +41,14 @@ function vender(string $view, array $data = [], ?array $config = null) : string
 		];
 	}
 
-	# 渲染，重点
 	$file = compile('test', $config);
 
+	# 渲染，重点
 	ob_start();
-	extract($data, EXTR_SKIP);
+	extract($data, EXTR_SKIP);	// 导入变量
 
 	try{
-		include $file;
+		include $file;		// 打印模版
 	}catch(\Exception $e){
 		ob_end_clean();
 		throw $e;
