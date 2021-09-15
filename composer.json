@@ -1,0 +1,12 @@
+{
+    "name": "test/php_template_demo",
+    "autoload": {
+        "files" : ["function.php"]
+    },
+    "authors": [
+        {
+            "name": "chenguangjun",
+            "email": "chen.gj@qq.com"
+        }
+    ]
+}
